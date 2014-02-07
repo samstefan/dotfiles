@@ -1,0 +1,17 @@
+# ~/.tmuxinator/luton.yml
+
+name: luton
+root: ~/Sites/LutonCouncil/Website
+
+# Runs before everything. Use it to start daemons etc.
+pre:
+  - open ~/sublime-projects/Luton.sublime-project
+  - VBoxManage startvm Evil9 --type headless
+
+windows:
+  - editor:
+      layout: a073,238x52,0,0{119x52,0,0,13,118x52,120,0[118x21,120,0,14,118x30,120,22,15]}
+      panes:
+        - 
+        - grunt
+        - 
